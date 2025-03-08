@@ -1,7 +1,7 @@
 .App {
   text-align: center;
   display: flex;
-  justify-content: flex-start; /* Align items to the top */
+  justify-content: center; /* Center the content horizontally */
   align-items: flex-start; /* Align items to the top */
   height: 100vh;
   padding: 20px; /* Add padding instead of margin */
@@ -119,7 +119,7 @@
   align-items: center;
   font-size: 24px;
   color: white;
-  padding: 0px,1.25rem,0px,1.25rem; /* Add padding to the front and back of the cards */
+  padding: 0px 1.25rem; /* Add padding to the front and back of the cards */
   font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
   font-weight: 400; /* Set lower font-weight */
 }
