@@ -6,17 +6,26 @@
   height: 100vh;
   padding: 20px; /* Add padding instead of margin */
   background-color: #f0f0f0;
+  overflow-y: auto; /* Enable vertical scrolling */
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  padding: 20px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Center the title horizontally */
+  align-items: center; /* Center the title vertically */
+}
+
+.App-header h1 {
+  margin: 0; /* Remove default margin */
 }
 
 .App-link {
@@ -32,6 +41,7 @@
   max-width: 1000px;
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add padding for spacing */
+  margin-top: 80px; /* Add margin to avoid overlap with fixed header */
 }
 
 .card {
@@ -100,6 +110,7 @@
 .card-front, .card-back {
   width: 100%;
   height: 100%;
+  border-radius: 10px;
   position: absolute;
   backface-visibility: hidden;
   display: flex;
