@@ -5,12 +5,17 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
+    font-weight: 400; /* Set lower font-weight */
 }
 
 .card {
     width: 150px;
     height: 300px;
     perspective: 1000px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the cards */
+    font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
+    font-weight: 400; /* Set lower font-weight */
 }
 
 .card-inner {
@@ -35,6 +40,8 @@ body {
     align-items: center;
     font-size: 24px;
     color: white;
+    font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
+    font-weight: 400; /* Set lower font-weight */
 }
 
 .card-front {
