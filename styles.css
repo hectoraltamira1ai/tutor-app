@@ -17,6 +17,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the cards */
     font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
     font-weight: 400; /* Set lower font-weight */
+    margin: 0 auto; /* Center the card horizontally */
 }
 
 .card-inner {
