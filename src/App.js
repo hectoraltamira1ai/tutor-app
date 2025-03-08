@@ -5,7 +5,20 @@ function FlipCard({ question, answer }) {
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleClick = () => {
+        console.log('Card clicked');
         setIsFlipped(!isFlipped);
+        if (!isFlipped) {
+            console.log('Attempting to speak');
+            if ('speechSynthesis' in window) {
+                const utterance = new SpeechSynthesisUtterance(answer);
+                utterance.onstart = () => console.log('Speech started');
+                utterance.onend = () => console.log('Speech ended');
+                utterance.onerror = (event) => console.error('Speech error', event);
+                speechSynthesis.speak(utterance);
+            } else {
+                console.error('Speech Synthesis not supported');
+            }
+        }
     };
 
     return (
