@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+function FlipCard() {
+    const [isFlipped, setIsFlipped] = useState(false);
+
+    const handleClick = () => {
+        setIsFlipped(!isFlipped);
+    };
+
+    return (
+        <div className={`card ${isFlipped ? 'is-flipped' : ''}`} onClick={handleClick}>
+            <div className="card-inner">
+                <div className="card-front">
+                    <h2>Front Side</h2>
+                </div>
+                <div className="card-back">
+                    <h2>Back Side</h2>
+                </div>
+            </div>
+        </div>
+    );
+}
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="App">
+            <div className="card-container">
+                {Array.from({ length: 10 }).map((_, index) => (
+                    <FlipCard key={index} />
+                ))}
+            </div>
+        </div>
+    );
 }
 
 export default App;
