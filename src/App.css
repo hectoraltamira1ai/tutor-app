@@ -12,7 +12,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #141e32;
   color: white;
   padding: 20px;
   width: 100%;
@@ -125,11 +125,11 @@
 }
 
 .card-front {
-  background-color: #007bff;
+  background-color: #022344;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Align content to the bottom */
-  padding: 5px; /* Add padding for spacing */
+  padding: 8px; /* Add padding for spacing */
   width: 100%; /* Ensure the width matches the back card */
 }
 
@@ -148,8 +148,7 @@
   font-size: 16px; /* Set font size */
   background-color: #28a745; /* Set background color */
   color: white; /* Set text color */
-  border: none; /* Remove border */
-  border-radius: 5px; /* Add border radius */
+  border-radius: 8px; /* Add border radius */
   cursor: pointer; /* Change cursor on hover */
 }
 
@@ -161,6 +160,11 @@
   background-color: #28a745;
   transform: rotateY(180deg);
   width: 100%; /* Ensure the width matches the front card */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-center; /* Align content to the bottom */
+  padding: 8px; /* Add padding for spacing */
+  width: 100%; /* Ensure the width matches the back card */
 }
 
 .error-message {
