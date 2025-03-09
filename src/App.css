@@ -8,6 +8,7 @@
   background-color: #f0f0f0;
   overflow-y: auto; /* Enable vertical scrolling */
   overflow-x: hidden; /* Prevent horizontal scrolling */
+  
 }
 
 .App-header {
@@ -49,7 +50,6 @@
   width: 750px; /* Fixed size for larger screens */
   height: 420px; /* Fixed size for larger screens */
   perspective: 1000px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the cards */
   margin: 10px; /* Add margin for spacing */
   font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
   font-weight: 400; /* Set lower font-weight */
@@ -120,6 +120,8 @@
   color: white;
   font-family: 'Roboto', sans-serif; /* Add Roboto font-family */
   font-weight: 400; /* Set lower font-weight */
+  border-radius: 30px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensure content doesn't overflow the rounded corners */
 }
 
 .card-front {
