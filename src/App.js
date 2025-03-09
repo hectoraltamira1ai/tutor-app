@@ -591,7 +591,10 @@ function App() {
             }
 
             if (jsCheckbox.checked) {
-                selectedCategories.push({ questions: jsQuestions, answers: jsAnswers });
+                selectedCategories.push({ 
+                  questions: jsQuestions, 
+                  answers: jsAnswers, 
+                });
             }
 
             if (htmlCheckbox.checked) {
@@ -677,7 +680,7 @@ function App() {
                 ) : (
                     selectedQuestions.map((question) => {
                         const answer = selectedAnswers.find((answer) => answer.id === question.id);
-                        return <FlipCard key={question.id} question={question.text} answer={answer.text} />;
+                        return <FlipCard key={question.id} question={question.text} answer={answer ? answer.text : 'No text available'} />;
                     })
                 )}
             </div>
@@ -797,7 +800,7 @@ function App2() {
             <div className="card-container">
                 {questions.map((question) => {
                     const answer = answers.find((answer) => answer.id === question.id);
-                    return <FlipCard key={question.id} question={question.text} answer={answer.text} />;
+                    return <FlipCard key={question.id} question={question.text} answer={answer ? answer.text : 'No text available'} />;
                 })}
             </div>
         </div>
