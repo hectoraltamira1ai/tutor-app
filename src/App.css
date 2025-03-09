@@ -36,13 +36,13 @@
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
   width: 100%; /* Ensure the container takes full width */
   max-width: 1000px;
   margin: 0 auto; /* Center the container horizontally */
   padding: 20px; /* Add padding for spacing */
-  margin-top: 80px; /* Add margin to avoid overlap with fixed header */
+  margin-top: 40px; /* Add margin to avoid overlap with fixed header */
 }
 
 .card {
@@ -124,11 +124,47 @@
 
 .card-front {
   background-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom */
+  padding: 5px; /* Add padding for spacing */
+  width: 100%; /* Ensure the width matches the back card */
+}
+
+.card-front h2 {
+  margin: 0; /* Remove default margin */
+  flex-grow: 1; /* Allow the heading to take up available space */
+  display: flex;
+  align-items: center; /* Center the heading vertically */
+  justify-content: center; /* Center the heading horizontally */
+}
+
+.card-front button {
+  align-self: center; /* Center the button horizontally */
+  margin-bottom: 20px; /* Add margin to the bottom */
+  padding: 10px 20px; /* Add padding to the button */
+  font-size: 16px; /* Set font size */
+  background-color: #28a745; /* Set background color */
+  color: white; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer; /* Change cursor on hover */
+}
+
+.card-front button:hover {
+  background-color: #218838; /* Darken background color on hover */
 }
 
 .card-back {
   background-color: #28a745;
   transform: rotateY(180deg);
+  width: 100%; /* Ensure the width matches the front card */
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 16px; /* Increase font size */
 }
 
 /* Adjust font size for different screen sizes */
