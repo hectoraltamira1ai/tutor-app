@@ -129,7 +129,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end; /* Align content to the bottom */
-  padding: 8px; /* Add padding for spacing */
   width: 100%; /* Ensure the width matches the back card */
 }
 
@@ -148,7 +147,7 @@
   font-size: 16px; /* Set font size */
   background-color: #28a745; /* Set background color */
   color: white; /* Set text color */
-  border-radius: 8px; /* Add border radius */
+  
   cursor: pointer; /* Change cursor on hover */
 }
 
@@ -163,7 +162,6 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-center; /* Align content to the bottom */
-  padding: 8px; /* Add padding for spacing */
   width: 100%; /* Ensure the width matches the back card */
 }
 
